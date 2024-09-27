@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> 
+    <title>Enter Last.fm Portal</title>
+</head>
+<body>
+    <h1>Enter Your Last.fm Username</h1>
+    <form action="{{ url_for('lastfm') }}" method="POST">
+        <label for="username">Last.fm Username:</label>
+        <input type="text" id="username" name="username" required>
+    
+        <label for="what">Choose Playlist Type:</label>
+        <select id="what" name="what" required>
+            <option value="library">Library</option>
+            <option value="mix">Mix</option>
+            <option value="recommended">Recommended</option>
+        </select>
+    
+        <button type="submit">Create Playlist</button>
+    </form>
+</body>
+</html>
