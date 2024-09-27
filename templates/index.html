@@ -1,51 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Last.fm Playlist Maker</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 
 </head>
+
 <body>
     <header>
-    <h1>Lastspot</h1>
-    <h2>Create Perfect Playlists Effortlessly!</h2>
-</header>
+        <h1>Lastspot</h1>
+        <h2>Create Perfect Playlists Effortlessly!</h2>
+    </header>
 
-<section class="container">
-    <p>Tired of scrolling through endless songs? Look no further! Lastspot helps you craft personalized Spotify playlists based on your Last.fm listening history. Whether you want to curate your own tunes or surprise friends with a thoughtfully designed playlist, our app has got you covered!</p>
-</section>
+    <section class="container">
+        <p>Tired of scrolling through endless songs? Look no further! Lastspot helps you craft personalized Spotify
+            playlists based on your Last.fm listening history. Whether you want to curate your own tunes or surprise
+            friends with a thoughtfully designed playlist, our app has got you covered!</p>
+    </section>
 
-<section class="container">
-    <h2>Why Use Lastspot ?</h2>
-    <ul>
-        <li><strong>Personalized Playlists:</strong> Automatically generate playlists based on your unique Last.fm listening habits.</li>
-        <li><strong>Surprise Friends:</strong> Create playlists for friends using their Last.fm accounts to introduce them to new music they'll love!</li>
-        <li><strong>Explore New Genres:</strong> Discover tracks you might have missed, expanding your musical horizons.</li>
-        <li><strong>Easy to Use:</strong> Our user-friendly interface makes playlist creation a breeze for everyone!</li>
-    </ul>
-</section>
+    <section class="container">
+        <h2>Why Use Lastspot ?</h2>
+        <ul>
+            <li><strong>Personalized Playlists:</strong> Automatically generate playlists based on your unique Last.fm
+                listening habits.</li>
+            <li><strong>Surprise Friends:</strong> Create playlists for friends using their Last.fm accounts to
+                introduce them to new music they'll love!</li>
+            <li><strong>Explore New Genres:</strong> Discover tracks you might have missed, expanding your musical
+                horizons.</li>
+            <li><strong>Easy to Use:</strong> Our user-friendly interface makes playlist creation a breeze for everyone!
+            </li>
+        </ul>
+    </section>
 
-<section class="container">
-    <h2>How to Use the App (It's simple!)</h2>
-  <ol>
-        <li><strong>Log in with Spotify:</strong> Start by logging in with your Spotify account.</li>
-        <li><strong>Enter a Last.fm Username:</strong> Enter the Last.fm username of the person whose listening history you'd like to base the playlist on.</li>
-        <li><strong>Check Your Spotify:</strong> The playlist will appear in your Spotify account, and you can enjoy your music instantly!</li>
-    </ol>
-</section>
+    <section class="container">
+        <h2>How to Use the App (It's simple!)</h2>
+        <ol>
+            <li><strong>Log in with Spotify:</strong> Start by logging in with your Spotify account.</li>
+            <li><strong>Enter a Last.fm Username:</strong> Enter the Last.fm username of the person whose listening
+                history you'd like to base the playlist on.</li>
+            <li><strong>Check Your Spotify:</strong> The playlist will appear in your Spotify account, and you can enjoy
+                your music instantly!</li>
+        </ol>
+    </section>
 
-<section class="container">
-    <h2>Start Creating Your Playlist Today!</h2>
-    <p>Don't miss out on the music you love. Let's transform your listening experience with Lastspot!</p>
-    <a href="{{ url_for('login') }}">Login with Spotify</a>
-</section>
+    <section class="container">
+        <h2>Start Creating Your Playlist Today!</h2>
+        <p>Don't miss out on the music you love. Let's transform your listening experience with Lastspot!</p>
+        <a href="{{ url_for('login') }}">Login with Spotify</a>
+    </section>
     <br>
     <footer>
-    <script src="https://liberapay.com/Vec/widgets/button.js"></script>
-<noscript><a href="https://liberapay.com/Vec/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+        <script src="https://liberapay.com/Vec/widgets/button.js"></script>
+        <noscript><a href="https://liberapay.com/Vec/donate"><img alt="Donate using Liberapay"
+                    src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
         <a href="https://github.com/AymanLar/lastspot">Github Repo</a>
-</footer>
+    </footer>
 </body>
+
 </html>
